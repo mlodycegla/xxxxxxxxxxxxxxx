@@ -1,0 +1,97 @@
+<section class="contactForm container-fluid d-flex flex-column py-5 px-0">
+  <!-- Nagłówki -->
+  <div class="container d-flex flex-column py-3 mb-4">
+    <h3 class="contactForm__tittle pb-1">MASZ PYTANIE</h3>
+    <h4 class="contactForm__subTittle pb-2 pb-sm-0">WYŚLIJ DO NAS WIADOMOŚĆ</h4>
+  </div>
+  <!-- Formularz -->
+  <form
+    class="contactForm__form container d-flex flex-column align-items-center align-items-md-start justify-content-evenly py-3"
+  >
+    <!-- Text -->
+    <div
+      class="mb-3 contactForm__form__emailContainer d-flex flex-column align-items-center align-items-md-start justify-content-evenly"
+    >
+      <!-- Email -->
+      <label
+        for="email"
+        class="contactForm__form__emailContainer__header form-label"
+        >Adres Email</label
+      >
+      <input
+        type="email"
+        class="form-control py-2 mt-2"
+        required
+        id="email"
+        name="email"
+        placeholder="Twój adres email..."
+      />
+    </div>
+
+    <!-- Text -->
+    <div
+      class="my-3 contactForm__form__emailContainer d-flex flex-column align-items-center align-items-md-start justify-content-evenly"
+    >
+      <!-- Email -->
+      <label
+        for="topic"
+        class="contactForm__form__emailContainer__header form-label"
+        >Temat</label
+      >
+      <input
+        type="text"
+        class="form-control py-2 mt-2"
+        id="topic"
+        name="topic"
+        required
+        placeholder="Podaj temat rozmowy..."
+      />
+    </div>
+    <!-- Message -->
+    <div
+      class="my-3 contactForm__form__messageContainer d-flex flex-column align-items-center align-items-md-start justify-content-evenly"
+    >
+      <label
+        for="message"
+        class="contactForm__form__messageContainer__header form-label"
+        >Wiadomość</label
+      >
+      <textarea
+        class="form-control py-2 mt-2"
+        required
+        id="message"
+        name="message"
+        placeholder="Twoja wiadomość..."
+        rows="2"
+      ></textarea>
+    </div>
+
+    <!-- Rodo -->
+    <div class="contactForm__form__rodo form-check form-switch mb-2 mt-3">
+      <input
+        class="contactForm__form__rodo__switch form-check-input"
+        type="checkbox"
+        role="switch"
+        required
+        id="flexSwitchCheckDefault"
+      />
+      <label
+        class="contactForm__form__rodo__text form-check-label text-muted"
+        for="flexSwitchCheckDefault"
+      >
+        Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o
+        ochronie danych osobowych w związku z ( np. realizacją zgłoszenia).
+        Podanie danych jest dobrowolne, ale niezbędne do przetworzenia
+        zapytania. Zostałem /am poinformowany /a, że przysługuje mi prawo
+        dostępu do swoich danych, możliwości ich poprawiania, żądania
+        zaprzestania ich przetwarzania. Administratorem danych osobowych jest
+        <strong>AVIKON sp. z o.o.</strong> z siedzibą
+        <strong>Rudzie Śląskiej</strong>.</label
+      >
+    </div>
+
+    <!-- Submit btn -->
+
+    <button class="btn contactForm__form__send">WYŚLIJ</button>
+  </form>
+</section>
